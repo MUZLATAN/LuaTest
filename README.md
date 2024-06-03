@@ -1,11 +1,16 @@
 # Windows 系统环境准备
+## 下载luajit 到 3rd_parties
+```
+git clone https://github.com/LuaJIT/LuaJIT
+```
+
 安装 Microsoft's Visual Studio (MSVC).
 
 Building with MSVC
 打开 "Visual Studio Command Prompt" (x86, x64 or ARM64),切到3rd_parties下面，并运行下面命令
 
 ```
-cd src
+cd luajit/src
 msvcbuild
 ```
 即可得到luajit 的库dll，以及头文件
