@@ -1,14 +1,19 @@
-# Windows Systems
-Prerequisites
-Either install one of the open source SDKs (MinGW or Cygwin), which come with a modified GCC plus the required development headers. Or install Microsoft's Visual Studio (MSVC).
+# Windows 系统环境准备
+安装 Microsoft's Visual Studio (MSVC).
 
 Building with MSVC
-Open a "Visual Studio Command Prompt" (x86, x64 or ARM64), cd to the directory with the source code and run these commands:
+打开 "Visual Studio Command Prompt" (x86, x64 or ARM64),切到3rd_parties下面，并运行下面命令
 
 ```
 cd src
 msvcbuild
 ```
-Check the msvcbuild.bat file for more options. Then follow the installation instructions below.
+即可得到luajit 的库dll，以及头文件
+或者检车msvcbuild.bat 文件查看更多选项.
 
-For an x64 to ARM64 cross-build run this first: vcvarsall.bat x64_arm64
+`For an x64 to ARM64 cross-build run this first: vcvarsall.bat x64_arm64`
+# 运行
+双击build.bat 即可生成vs工程文件
+
+# 进入build 
+打开.sln文件即可
