@@ -1,4 +1,5 @@
 # Windows 系统环境准备
+luajit 可以使用我的压缩包， 也可以手动编译
 ## 下载luajit 到 3rd_parties
 ```
 git clone https://github.com/LuaJIT/LuaJIT
@@ -17,8 +18,11 @@ msvcbuild
 或者检车msvcbuild.bat 文件查看更多选项.
 
 `For an x64 to ARM64 cross-build run this first: vcvarsall.bat x64_arm64`
-# 运行
+# 打开工程
 双击build.bat 即可生成vs工程文件
 
 # 进入build 
 打开.sln文件即可
+
+# 编译运行
+编译完成后，需要将lua文件和 luajit/src/lua51.dll放到exe同目录
