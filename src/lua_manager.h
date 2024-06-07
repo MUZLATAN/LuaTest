@@ -12,5 +12,4 @@ public:
 
 public:
 	bool initLua();
-	bool CallLuaFunc();
 };

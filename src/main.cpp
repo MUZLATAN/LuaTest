@@ -6,9 +6,6 @@ extern "C"
 #include <lualib.h>
 }
 
-
-
-
 /*
     Lua的异常捕获主要基于pcall及xpcall函数。
 */
@@ -23,7 +20,7 @@ void test_api_getfield()
     lua_State* L = luaL_newstate();
 
     // 加载并执行目标lua文件
-    if (LUA_OK != luaL_dofile(L, "script.lua")) {
+    if (LUA_OK != luaL_dofile(L, ".\\script.lua")) {
         const char* err = lua_tostring(L, -1);
         fprintf(stderr, "err:\t%s\n", err);
         return;

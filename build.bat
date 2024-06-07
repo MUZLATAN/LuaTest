@@ -1,5 +1,5 @@
 @echo off
 
 @REM "Build Directory：build"
-cmake -B ./build -G"Visual Studio 16 2019" 
+cmake -B ./build -G"Visual Studio 16 2019"  -DCMAKE_BUILD_TYPE=Debug
 pause

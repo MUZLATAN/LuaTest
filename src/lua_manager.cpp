@@ -1,13 +1,9 @@
 #include "lua_manager.h"
+#include "iostream"
 
 bool LuaObject::initLua()
 {
-	L = luaL_newstate();
-	if (L == nullptr)
-	{
-		return false;
-	}
-
-
+	std::cout << "init" << std::endl;
+	return false;
 
 }
